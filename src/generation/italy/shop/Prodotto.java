@@ -10,11 +10,11 @@ public class Prodotto {
 	int iva = 20;
 	
 	Prodotto(String nome, String descrizione, int prezzo) {
-		Random rnd = new Random();
-		this.nome = nome;
+        Random rnd = new Random();
+        this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
-        this.codice = rnd.nextInt(99999);
+        this.codice = rnd.nextInt(10000, 100000);
 	}
 
     public int getPrice() {
